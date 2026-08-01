@@ -39,7 +39,7 @@ This demonstrates endpoint visibility and Windows authentication monitoring.
 
 Screenshot:
 
-![Successful Logon](screenshots/event-4624.png)
+![Successful Logon](screenshots/successful-login-event.png)
 
 
 ---
@@ -52,7 +52,7 @@ The events were collected and investigated through Wazuh.
 
 Screenshot:
 
-![Failed Logon](screenshots/event-4625.png)
+![Failed Logon](screenshots/failed-login-event.png)
 
 
 ---
