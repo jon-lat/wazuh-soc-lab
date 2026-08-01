@@ -6,35 +6,28 @@ This project is a home Security Operations Center (SOC) lab built to practice se
 The lab uses Wazuh as a SIEM platform to collect and analyze security events from a Windows endpoint. The goal was to simulate basic SOC analyst workflows such as monitoring authentication activity and investigating endpoint events.
 
 Wazuh Homepage:
+
 ![Wazuh Homepage](screenshots/wazuh-homepage.png)
+
+
 Windows Agent Connection:
+
 ![Windows Agent](screenshots/windows-agent.png)
 
 
-## Technologies Used
-
-- Wazuh SIEM
-- Ubuntu Server
-- Windows Endpoint
-- Virtualization (KVM/libvirt)
-- Windows Event Logs
-- Linux administration
-
 ## Lab Setup
 
-The environment consists of:
+The lab consists of an Ubuntu Server VM running Wazuh and a Windows VM acting as a monitored endpoint. 
 
-- Ubuntu Server hosting the Wazuh platform
-- Windows VM acting as a monitored endpoint
-- Wazuh Agent forwarding Windows security events to the SIEM dashboard
+The Wazuh agent forwards Windows security logs to the SIEM dashboard for analysis.
 
 ## Detection Scenarios
 
 ### Successful Logon (Event ID 4624)
 
-A successful authentication event was generated and analyzed through the Wazuh dashboard.
+Correct Password entered by user in Windows login screen.
 
-This demonstrates endpoint visibility and Windows authentication monitoring.
+A successful authentication event was generated and analyzed through the Wazuh dashboard.
 
 Screenshot:
 
@@ -43,9 +36,9 @@ Screenshot:
 
 ### Failed Logon (Event ID 4625)
 
-Multiple failed authentication attempts were generated to simulate suspicious login activity.
+Multiple wrong passwords were entered by user in Windows login screen.
 
-The events were collected and investigated through Wazuh.
+Multiple failed authentication attempts were generated to simulate suspicious login activity.
 
 Screenshot:
 
@@ -54,7 +47,7 @@ Screenshot:
 
 ### System Shutdown Event
 
-Windows system lifecycle activity was monitored through collected endpoint logs.
+Windows shutdown event was generated and analyzed through the Wazuh dashboard.
 
 Screenshot:
 
@@ -68,13 +61,3 @@ Screenshot:
 - Security event investigation
 - Linux server administration
 - Virtual machine networking
-- Basic SOC workflows
-
-## Future Improvements
-
-Planned improvements:
-
-- Add Sysmon telemetry
-- Create custom Wazuh detection rules
-- Add Active Directory environment
-- Perform simulated security incidents
