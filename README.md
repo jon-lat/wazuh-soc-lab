@@ -3,13 +3,13 @@
 ## Overview
 
 This project is a home Security Operations Center (SOC) lab built to practice security monitoring, endpoint visibility, and security event investigation.
-
 The lab uses Wazuh as a SIEM platform to collect and analyze security events from a Windows endpoint. The goal was to simulate basic SOC analyst workflows such as monitoring authentication activity and investigating endpoint events.
 
+Wazuh Homepage:
 ![Wazuh Homepage](screenshots/wazuh-homepage.png)
+Windows Agent Connection:
 ![Windows Agent](screenshots/windows-agent.png)
 
----
 
 ## Technologies Used
 
@@ -20,8 +20,6 @@ The lab uses Wazuh as a SIEM platform to collect and analyze security events fro
 - Windows Event Logs
 - Linux administration
 
----
-
 ## Lab Setup
 
 The environment consists of:
@@ -29,8 +27,6 @@ The environment consists of:
 - Ubuntu Server hosting the Wazuh platform
 - Windows VM acting as a monitored endpoint
 - Wazuh Agent forwarding Windows security events to the SIEM dashboard
-
----
 
 ## Detection Scenarios
 
@@ -45,8 +41,6 @@ Screenshot:
 ![Successful Logon](screenshots/successful-login-event.png)
 
 
----
-
 ### Failed Logon (Event ID 4625)
 
 Multiple failed authentication attempts were generated to simulate suspicious login activity.
@@ -58,8 +52,6 @@ Screenshot:
 ![Failed Logon](screenshots/failed-login-event.png)
 
 
----
-
 ### System Shutdown Event
 
 Windows system lifecycle activity was monitored through collected endpoint logs.
@@ -67,8 +59,6 @@ Windows system lifecycle activity was monitored through collected endpoint logs.
 Screenshot:
 
 ![Shutdown Event](screenshots/shutdown-event.png)
-
----
 
 ## Skills Demonstrated
 
@@ -79,8 +69,6 @@ Screenshot:
 - Linux server administration
 - Virtual machine networking
 - Basic SOC workflows
-
----
 
 ## Future Improvements
 
