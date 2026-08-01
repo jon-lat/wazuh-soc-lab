@@ -6,6 +6,9 @@ This project is a home Security Operations Center (SOC) lab built to practice se
 
 The lab uses Wazuh as a SIEM platform to collect and analyze security events from a Windows endpoint. The goal was to simulate basic SOC analyst workflows such as monitoring authentication activity and investigating endpoint events.
 
+![Wazuh Homepage](screenshots/wazuh-homepage.png)
+![Windows Agent](screenshots/windows-agent.png)
+
 ---
 
 ## Technologies Used
